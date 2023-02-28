@@ -1,0 +1,92 @@
+.login-background {
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+    height: 100vh;
+
+    .login-container {
+        width: 400px;
+        height: 600px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background-color: #fff;
+        border-radius: 12px;
+    }
+
+    .login-content {
+        padding: 16px;
+
+        .text-login {
+            text-align: center;
+            padding: 48px 0px 48px;
+            font-weight: 600;
+            font-size: 32px;
+        }
+
+        .login-input {
+            margin: 8px 0;
+
+            .form-password {
+                position: relative;
+            }
+
+            i {
+                position: absolute;
+                right: 12px;
+                top: 10px;
+                cursor: pointer;
+            }
+        }
+
+        .btn-login {
+            margin: 8px 0;
+        }
+
+        .forgot-text {
+            font-size: 13px;
+            opacity: 0.8;
+        }
+
+        .or-text {
+            text-align: center;
+            opacity: 0.8;
+            margin: 32px 0;
+        }
+
+        .social-login {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 86px;
+
+            .google-icon {
+                font-size: 30px;
+                background-color: rgb(236, 46, 46);
+                color: #fff;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .facebook-icon {
+                font-size: 30px;
+                background-color: rgb(42, 72, 243);
+                color: #fff;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+
+

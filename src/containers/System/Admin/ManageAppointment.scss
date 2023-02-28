@@ -1,0 +1,32 @@
+div._loading_overlay_wrapper {
+    position: unset;
+    
+    ._loading_overlay_overlay {
+        z-index: 1000000000;
+    }
+}
+
+.manage-appointment-container {
+    .manage-appointment-content {
+        .manage-appointment-title {
+            font-size: 22px;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .manage-appointment-body {
+            padding: 20px 80px;
+        }
+
+        .manage-appointment-table {
+            padding: 20px 80px;
+            text-align: center;
+
+            .table-body {
+                font-style: normal;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.introduce-doctor-container {
+    .introduce-doctor {
+        display: flex;
+        text-align: justify;
+        padding-bottom: 12px;
+
+        .introduce-left {
+            width: 20%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+
+        .introduce-right {
+            width: 80%;
+
+            .doctor-title {
+                font-size: 22px;
+                font-weight: 600;
+                padding: 8px 16px;
+            }
+
+            .doctor-position {
+                padding-left: 16px;
+            }
+        }
+    }
+
+    .doctor-price {
+        font-weight: 600;
+    }
+}
+

@@ -1,0 +1,55 @@
+.doctor-infor-examination-container {
+    .doctor-infor-examination-content {
+        margin-left: 16px;
+        margin-top: 4px;
+
+        .medical-facility-infor {
+            .medical-facility-title {
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 15px;
+                color: rgb(68, 68, 68);
+            }
+
+            .medical-facility-name {
+                font-weight: 600;
+                color: rgb(51, 51, 51);
+                padding: 8px 0;
+                font-size: 15px;
+            }
+
+            .medical-facility-address {
+                font-size: 15px;
+            }
+        }
+
+        .doctor-infor-examination {
+            display: flex;
+            align-items: center;
+            margin-top: 8px;
+
+            .infor-examination-title {
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 15px;
+                color: rgb(68, 68, 68);
+            }
+
+            .infor-examination-price {
+                margin-left: 4px;
+                font-size: 15px;
+            }
+        }
+
+        .payment {
+            margin-top: 8px;
+            font-size: 15px;
+        }
+
+        .infor-examination-warning {
+            margin-top: 4px;
+            font-size: 13px;
+            font-style: italic;
+        }
+    }
+}

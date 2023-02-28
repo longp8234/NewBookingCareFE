@@ -1,0 +1,295 @@
+
+.section {
+    height: 360px;
+
+    &.section-specialist {
+        background-color: #fff;
+    }
+
+    &.section-medical-facility {
+        background-color: #f5f5f5;
+    }
+
+    &.section-outstanding-doctor {
+        background-color: #fff;
+    }
+
+    &.section-handbook {
+        background-color: #f5f5f5;
+    } 
+}
+
+//Set slick
+.slick-prev {
+    left: -15px !important;
+    background-color: rgb(199, 199, 199) !important;
+    z-index: 1 !important;
+    width: 44px !important;
+    height: 48px !important;
+    border: 1px solid rgb(173, 173, 173) !important;
+
+    &:hover {
+        background-color: rgb(211, 211, 211) !important;
+    }
+}
+
+.slick-next {
+    right: -15px !important;
+    background-color: rgb(199, 199, 199) !important;
+    z-index: 1 !important;
+    width: 44px !important;
+    height: 48px !important;
+    border: 1px solid rgb(173, 173, 173) !important;
+
+    &:hover {
+        background-color: rgb(211, 211, 211) !important;
+    }
+}
+
+.slick-disabled {
+    display: none !important;
+}
+//End slick
+
+.section-container {
+    height: 100%;
+    padding: 28px 200px;
+
+    .section-header {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .section-header-name {
+            font-size: 26px;
+            font-weight: 600;
+            margin-left: 5px;
+        }
+
+        .section-header-btn {
+            margin-bottom: 8px;
+            border: none;
+            padding: 8px 12px;
+            background-color: #ddd;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 1px;
+
+            &:hover {
+                background-color: rgb(158, 158, 158);
+                color: #fffefe;
+            }
+        }
+    }
+
+    .section-body {
+        height: 260px;
+        margin-top: 12px;
+
+        .section-item {
+            margin: 5px;
+
+            &:hover {
+                color: #49bce2;
+            }
+
+            .section-image {
+                height: 160px;
+                width: 280px;
+                background-size: cover;
+                background-position: center center;
+                cursor: pointer;
+
+                &.section-specialist {
+                    // background-image: url('../../assets/images/Specialist/cot-song.jpg');
+                }
+
+                &.section-medical-facility {
+                    // background-image: url('../../assets/images/MedicalFacility/bv-viet-duc.jpg');
+                }
+
+                &.section-outstanding-doctor {
+                    height: 120px;
+                    width: 120px;
+                    // background-image: url('../../assets/images/Doctor/bs-tran-minh-khuyen.jpg');
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+
+                &.section-handbook {
+                    background-image: url('../../assets/images/Handbook/handbook-tri-mun-phong-kham-da-lieu-ha-noi.jpg');
+                }
+            }
+
+            .section-name {
+                width: 250px;
+                font-size: 16px;
+                font-weight: 500;
+                margin-top: 8px;
+                cursor: pointer;
+
+                &.section-handbook {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+// CSS section outstanding doctor
+.section-outstanding-doctor {
+    .section-item {
+        padding: 5px;
+        cursor: pointer;
+        
+        .about-doctor {
+            border: 1px solid #e7e7e7;
+            text-align: center;
+            margin-bottom: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right: 5px;
+    
+            .doctor-image {
+                padding-top: 12px;
+            }
+    
+            .doctor-infor {
+                .doctor-name {
+                    font-size: 15px;
+                    margin-top: 12px;
+                }
+        
+                .doctor-specialist {
+                    opacity: 0.6;
+                    font-size: 13px;
+                    margin-bottom: 12px;
+                    margin-top: 0px !important;
+                }
+            }
+        }
+    }
+}
+
+//About
+.section-about {
+    padding: 50px 200px 80px;
+    background-color: #474747;
+    color: rgb(224, 224, 224);
+
+    .section-about-content {
+        display: flex;
+        justify-content: space-between;
+
+        .section-about-header {
+            font-size: 20px;
+            font-weight: 600;
+            padding-bottom: 24px;
+        }
+
+        
+
+        .content-center {
+            .section-about-company {
+                font-size: 15px;
+        
+                .company-title {}
+        
+                .company-location {
+                    margin-top: 8px;
+                }
+        
+                .company-title {
+                    margin-top: 8px;
+                }
+        
+            }
+        
+            .list-options {
+                ul {
+                    margin-top: 10px;
+                    margin-left: -27px;
+                }
+
+                li{
+                    list-style-type: none;
+                }
+            }
+        }
+
+        .content-right {
+            .content-item {
+                font-size: 12px;
+                letter-spacing: 1px;
+
+                .content-item-icon {
+                    color: #49bce2;
+                }
+            }
+
+            .download-content {
+                display: flex;
+                align-items: center;
+
+                .mobile-download {
+                    background-image: url('../../assets/images/Logo/bookingcare-app.png');
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    height: 240px;
+                    width: 120px;
+                    border-radius: 10px;
+                }
+
+                .download-options {
+                    .download-ggplay {
+                        background-image: url('../../assets/images/Logo/google-play-badge.svg');
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: cover;
+                        height: 50px;
+                        width: 180px;
+                        border-radius: 8px;
+                        margin-left: 12px;
+                        margin-bottom: 12px;
+                    }
+    
+                    .download-appstore {
+                        background-image: url('../../assets/images/Logo/app-store-badge-black.svg');
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: cover;
+                        height: 50px;
+                        width: 180px;
+                        border-radius: 8px;
+                        margin-left: 12px;
+                    }
+
+                    .list-content {
+                        margin-top: 12px;
+                        font-size: 12px;
+                        margin-left: 12px;
+                    }
+                }
+
+            }
+        }
+    }
+    
+}
+    
+//Footer
+.home-footer {
+    text-align: center;
+    padding-top: 12px;
+    border-top: 1px solid #ccc;
+    padding-bottom: 32px;
+    background-color: #474747;
+    color: rgb(224, 224, 224);
+}
+

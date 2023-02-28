@@ -30,7 +30,7 @@
             position: absolute;
             padding: 0;
             .menu {
-                width: 205px;
+                width: 100%;
                 padding: 0 15px;
                 height: 35px;
                 line-height: 35px;
@@ -63,15 +63,17 @@
                         a {
                             display: block;
                         }
-                        &.active a {
-                            font-weight: 500;
-                            color: $colormain;
+                        &.active {
+                            a {
+                                color: #eba119 !important;
+                            }
                         }
                     }
                 }
-                &.active span {
-                    font-weight: 500;
-                    color: $colormain;
+                &.active {
+                    a {
+                        color: #eba119 !important;
+                    }
                 }
                 &:hover {
                     background-color: darken($bg-menu-color, 3);
