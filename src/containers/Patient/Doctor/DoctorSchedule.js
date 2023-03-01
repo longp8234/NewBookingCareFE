@@ -43,14 +43,14 @@ class DoctorSchedule extends Component {
         for (let i = 0; i < 7; i++){
             let object = [];
             if (language === LANGUAGES.VI) {
-                let labelVi = moment(new Date()).add(i, 'days').format('dddd - DD/MM');
+                let labelVi = moment(new Date()).add(i+1, 'days').format('dddd - DD/MM');
                 object.label = this.capitalizeFirstLetter(labelVi);
             }
             if(language === LANGUAGES.EN){
-                object.label = moment(new Date()).add(i, 'days').locale('en').format('dddd - DD/MM');
+                object.label = moment(new Date()).add(i+1, 'days').locale('en').format('dddd - DD/MM');
             }
             
-            object.value = moment(new Date()).add(i, 'days').startOf('day').valueOf();
+            object.value = moment(new Date()).add(i+1, 'days').startOf('day').valueOf();
             allDays.push(object)
         }
 
