@@ -6,18 +6,27 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { getAllClinic } from '../../../services/userService';
 import { withRouter } from 'react-router';
+import LoadingOverlay from 'react-loading-overlay';
+
 
 class MedicalFacility extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            dataClinics: []
+            dataClinics: [],
+            isShowLoading: false,
         }
     }
 
     async componentDidMount() {
         let res = await getAllClinic();
+        this.setState({
+            isShowLoading: true,
+        })
         if (res && res.errCode === 0) {
+            this.setState({
+                isShowLoading: false,
+            })
             this.setState({
                 dataClinics: res.data ? res.data : []
             })
@@ -55,6 +64,11 @@ class MedicalFacility extends Component {
                                 )
                             })}
                         </Slider>
+                        <LoadingOverlay
+                            active={this.state.isShowLoading}
+                            spinner
+                            text='Loading...'
+                        />
                     </div>
                 </div>
             </div>

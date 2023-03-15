@@ -6,17 +6,23 @@ import * as actions from '../../../store/actions';
 import { LANGUAGES } from '../../../utils';
 import { withRouter } from 'react-router';
 import { getAllSpecialist } from '../../../services/userService';
+import LoadingOverlay from 'react-loading-overlay';
+
 
 class OutstandingDoctor extends Component {
     constructor(props) {
         super(props)
         this.state = {
             arrDoctors: [],
+            isShowLoading: false,
         }
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
         if (prevProps.topDoctorRedux !== this.props.topDoctorRedux) {
+            this.setState({
+                isShowLoading: false,
+            })
             this.setState({
                 arrDoctors: this.props.topDoctorRedux
             })
@@ -25,6 +31,9 @@ class OutstandingDoctor extends Component {
 
     async componentDidMount() {
         this.props.loadTopDoctors();
+        this.setState({
+            isShowLoading: true,
+        })
     }
 
     handleViewDetailDoctor = (doctor) => {
@@ -70,6 +79,11 @@ class OutstandingDoctor extends Component {
                                 )
                             })}
                         </Slider>
+                        <LoadingOverlay
+                            active={this.state.isShowLoading}
+                            spinner
+                            text='Loading...'
+                        />
                     </div>
                 </div>
             </div>
